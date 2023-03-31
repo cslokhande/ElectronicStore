@@ -39,6 +39,13 @@ public class UserController {
     @Value("${project.image}")
     private String path;
 
+    /**
+     * @apiNote createUser
+     * @since 1.0
+     * @param userDto
+     * @return UserDto
+     */
+
     @PostMapping("/users")
     public ResponseEntity<UserDto> createUser(@Valid @RequestBody UserDto userDto) {
         logger.info("Initiating request for create a user");
