@@ -1,8 +1,8 @@
 package com.bikkadit.electronicstore.service.impl;
 
+import com.bikkadit.electronicstore.constant.AppConstant;
 import com.bikkadit.electronicstore.exception.ResourceNotFoundException;
 import com.bikkadit.electronicstore.model.Category;
-import com.bikkadit.electronicstore.myConfig.AppConstant;
 import com.bikkadit.electronicstore.apiResponce.CategoryResponse;
 import com.bikkadit.electronicstore.payload.CategoryDto;
 import com.bikkadit.electronicstore.repository.CategoryRepo;
@@ -32,47 +32,46 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public CategoryDto create(CategoryDto categoryDto) {
-        logger.info("Initiating step to save category");
+        logger.info("Initiating dao call to save create");
         Category category = this.mapper.map(categoryDto, Category.class);
         category.setIsactive(AppConstant.YES);
         Category save = this.categoryRepo.save(category);
-        logger.info("Completion step to save category");
+        logger.info("Complete dao call to save create");
         return this.mapper.map(save, CategoryDto.class);
     }
 
     @Override
     public CategoryDto update(CategoryDto categoryDto, Long categoryId) {
-        logger.info("Initiating step to update category");
+        logger.info("Initiating dao call to update category by categoryId{}", categoryId);
         Category category = this.categoryRepo.findById(categoryId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.CATEGORY_NOT_FOUND));
         category.setTitle(categoryDto.getTitle());
         category.setDescription(categoryDto.getDescription());
         category.setCoverImage(categoryDto.getCoverImage());
         Category update = this.categoryRepo.save(category);
-        logger.info("Completion step to update category");
+        logger.info("Complete dao call to update category by categoryId{}", categoryId);
         return this.mapper.map(update, CategoryDto.class);
     }
 
     @Override
     public CategoryDto getByCategoryId(Long categoryId) {
-        logger.info("Initiating step to get category");
+        logger.info("Initiating dao call to get category by categoryId{}", categoryId);
         Category getCategory = this.categoryRepo.findById(categoryId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.CATEGORY_NOT_FOUND));
-        logger.info("Completion step to get category");
+        logger.info("Complete dao call to get category by categoryId{}", categoryId);
         return this.mapper.map(getCategory, CategoryDto.class);
     }
 
     //Get all category
     @Override
     public CategoryResponse getCategories(int pageNumber,int pageSize, String sortBy, String sortDir) {
-        logger.info("Initiating Dao call for get all category");
+        logger.info("Initiating dao call to get all category");
         Sort sort=(sortDir.equalsIgnoreCase("asc"))?Sort.by(sortBy).ascending():Sort.by(sortBy).descending();
         PageRequest page = PageRequest.of(pageSize, pageNumber, sort);
         Page<Category> all = this.categoryRepo.findAll(page);
         List<Category> content = all.getContent();
         List<CategoryDto> collect = content.stream().map((cat) -> this.mapper.map(cat, CategoryDto.class))
                 .collect(Collectors.toList());
-
         CategoryResponse categoryResponse = new CategoryResponse();
         categoryResponse.setContent(collect);
         categoryResponse.setPageSize(all.getSize());
@@ -80,18 +79,18 @@ public class CategoryServiceImpl implements CategoryService {
         categoryResponse.setTotalElement(all.getTotalElements());
         categoryResponse.setTotalPage(all.getTotalPages());
         categoryResponse.setLastPage(all.isLast());
-        logger.info("Completed Dao call for get all category");
+        logger.info("Complete dao call to get all category");
         return categoryResponse;
     }
 
     @Override
     public void deleteByCategoryId(Long categoryId) {
-        logger.info("Initiating step to delete category");
+        logger.info("Initiating dao call to delete by categoryId{}", categoryId);
         Category deleteCategory = this.categoryRepo.findById(categoryId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.CATEGORY_NOT_FOUND));
         deleteCategory.setIsactive(AppConstant.NO);
         this.categoryRepo.save(deleteCategory);
-        logger.info("Completion step to delete category");
+        logger.info("Complete dao call to delete by categoryId{}", categoryId);
     }
 
 

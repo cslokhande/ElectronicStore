@@ -1,9 +1,9 @@
 package com.bikkadit.electronicstore.service.impl;
 
+import com.bikkadit.electronicstore.constant.AppConstant;
 import com.bikkadit.electronicstore.exception.ResourceNotFoundException;
 import com.bikkadit.electronicstore.helper.Helper;
 import com.bikkadit.electronicstore.model.User;
-import com.bikkadit.electronicstore.myConfig.AppConstant;
 import com.bikkadit.electronicstore.apiResponce.UserPageableResponse;
 import com.bikkadit.electronicstore.payload.UserDto;
 import com.bikkadit.electronicstore.repository.UserRepo;
@@ -34,17 +34,17 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto saveUser(UserDto userDto) {
-        logger.info("Initiating step to save user");
+        logger.info("Initiating dao call to save User");
         User user =  this.dtoToUser(userDto);
         user.setIsactive(AppConstant.YES);
         User save = this.userRepo.save(user);
-        logger.info("Completion step to save user");
+        logger.info("Complete dao call to save User");
         return  this.UserToDto(save);
     }
 
     @Override
     public UserDto updateUser(UserDto userDto, Long userId) {
-        logger.info("Initiating step to update user");
+        logger.info("Initiating dao call to update user by userId{}", userId);
         User user = this.userRepo.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.USER_NOT_FOUND));
         user.setName(userDto.getName());
@@ -54,40 +54,40 @@ public class UserServiceImpl implements UserService {
         user.setGender(userDto.getGender());
         user.setImageName(userDto.getImageName());
         User updateUser = userRepo.save(user);
-        logger.info("Completion step to update user");
+        logger.info("Complete dao call to update user by userId{}", userId);
         return this.modelMapper.map(updateUser, UserDto.class);
     }
 
     @Override
     public void deleteUser(Long userId) {
-        logger.info("Initiating step to delete user");
+        logger.info("Initiating dao call to delete user by userId{}", userId);
         User deleteUser = this.userRepo.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.USER_NOT_FOUND));
         deleteUser.setIsactive(AppConstant.NO);
         userRepo.save(deleteUser);
-        logger.info("Completion step to delete user");
+        logger.info("Complete dao call to delete user by userId{}", userId);
     }
 
     @Override
     public UserDto getUser(Long userId) {
-        logger.info("Initiating step to get user");
+        logger.info("Initiating dao call to get all user");
         User user =  this.userRepo.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.USER_NOT_FOUND));
-        logger.info("Completion step to get user");
+        logger.info("Complete dao call to get all user");
         return this.UserToDto(user);
     }
 
     @Override
     public UserDto getUserByEmail(String email) {
-        logger.info("Initiating step to get user by email");
+        logger.info("Initiating dao call to get user by email{}", email);
         User userEmail = this.userRepo.findByEmail(email)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.USER_NOT_FOUND));
-        logger.info("Completion step to get user by email");
+        logger.info("Complete dao call to get user by email{}", email);
         return this.UserToDto(userEmail);
     }
     @Override
     public UserPageableResponse<UserDto> getAllUser(int pageNumber, int pageSize, String sortBy, String sortDir) {
-        logger.info("Initiating step to get all user");
+        logger.info("Initiating dao call to get all user");
         Sort sort=(sortDir.equalsIgnoreCase("asc"))?Sort.by(sortBy).ascending():Sort.by(sortBy).descending();
 
 //        Sort sort = null;
@@ -100,7 +100,7 @@ public class UserServiceImpl implements UserService {
         Pageable p = PageRequest.of(pageSize, pageNumber, sort);
         Page<User> userPage = this.userRepo.findAll(p);
         UserPageableResponse<UserDto> response = Helper.getPageableResponse(userPage,UserDto.class);
-        logger.info("Completion step to get all user");
+        logger.info("Initiating dao call to get all user");
         return response;
 
 
@@ -108,11 +108,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<UserDto> searchUser(String keyword) {
-        logger.info("Initiating step to search user by using any keyword");
+        logger.info("Initiating dao call to get user by using any keyword");
         List<User> byNameContaining = this.userRepo.findByNameContaining(keyword);
         List<UserDto> dtoList = byNameContaining.stream().map((user) -> this.modelMapper.map(user, UserDto.class))
                 .collect(Collectors.toList());
-        logger.info("Completion step to search user by using any keyword");
+        logger.info("Completion dao call to get user by using any keyword");
         return dtoList;
     }
 

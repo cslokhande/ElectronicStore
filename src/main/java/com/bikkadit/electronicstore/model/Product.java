@@ -5,26 +5,27 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Product {
+public class Product extends BaseEntityClass {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long productId;
-
+    private Integer productId;
     private String title;
+    @Column(length = 1000)
+    private String descrition;
+    private Integer price;
+    private Integer discountedPrice;
+    private Integer quantity;
+    private Date addedDate;
+    private boolean live;
+    private boolean stock;
 
-    private String description;
-
-    private String coverImage;
 }
 
