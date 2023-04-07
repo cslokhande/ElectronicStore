@@ -9,14 +9,14 @@ public interface ProductService {
     ProductDto create(ProductDto productDto);
 
     //update
-    ProductDto update(ProductDto productDto,Integer productId);
+    ProductDto update(ProductDto productDto,Long productId);
 
     //delete
-    void delete(Integer productId);
+    void delete(Long productId);
 
     //get single
 
-    ProductDto get(Integer productId);
+    ProductDto get(Long productId);
 
     //get all
     UserPageableResponse<ProductDto> getAll(int pageNumber, int pageSize, String sortBy, String sortDir);

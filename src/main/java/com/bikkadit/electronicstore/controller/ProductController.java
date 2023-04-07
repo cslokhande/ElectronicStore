@@ -27,12 +27,11 @@ public class ProductController {
         ProductDto createProduct = service.create(productDto);
         logger.info("Complete request for create a category");
         return new ResponseEntity<>(createProduct, HttpStatus.CREATED);
-
     }
 
     //update
     @PutMapping("/{productId}")
-    public ResponseEntity<ProductDto> updateProduct(@RequestBody ProductDto productDto,@PathVariable Integer productId){
+    public ResponseEntity<ProductDto> updateProduct(@RequestBody ProductDto productDto,@PathVariable Long productId){
         logger.info("Initiating request for update a product by productId{}",productId);
         ProductDto updateProduct = service.update(productDto, productId);
         logger.info("Complete request for update a product by productId{}",productId);
@@ -42,7 +41,7 @@ public class ProductController {
 
     //delete
     @DeleteMapping("/{productId}")
-    public ResponseEntity<ApiResponse> deleteProduct(@PathVariable Integer productId){
+    public ResponseEntity<ApiResponse> deleteProduct(@PathVariable Long productId){
         logger.info("Initiating request for delete a product by productId{}",productId);
         service.delete(productId);
         logger.info("Complete request for delete a product by productId{}",productId);
@@ -51,7 +50,7 @@ public class ProductController {
 
     //get single
     @GetMapping("/{productId}")
-    public ResponseEntity<ProductDto> getProduct(@PathVariable Integer productId){
+    public ResponseEntity<ProductDto> getProduct(@PathVariable Long productId){
         logger.info("Initiating request for get product by productId{}",productId);
         ProductDto getProduct = service.get(productId);
         logger.info("Complete request for get product by productId{}",productId);
@@ -71,7 +70,6 @@ public class ProductController {
         UserPageableResponse<ProductDto> pagealeResponse = service.getAll(pageNumber, pageSize, sortBy, sortDir);
         logger.info("Complete request for get all product");
         return new ResponseEntity<>(pagealeResponse,HttpStatus.OK);
-
     }
 
     //get all live
@@ -86,8 +84,9 @@ public class ProductController {
         UserPageableResponse<ProductDto> pagealeResponse = service.getAllLive(pageNumber, pageSize, sortBy, sortDir);
         logger.info("Complete request for get all live product");
         return new ResponseEntity<>(pagealeResponse,HttpStatus.OK);
-
     }
+
+
     //search all
     @GetMapping("/search/{keyword}")
     public ResponseEntity<UserPageableResponse> search(
@@ -101,7 +100,6 @@ public class ProductController {
         UserPageableResponse<ProductDto> pagealeResponse = service.searchByTitle(keyword,pageNumber, pageSize, sortBy, sortDir);
         logger.info("Complete request for search by keyword{}",keyword);
         return new ResponseEntity<>(pagealeResponse,HttpStatus.OK);
-
     }
 
 }

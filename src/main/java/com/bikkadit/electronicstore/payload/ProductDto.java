@@ -2,6 +2,7 @@ package com.bikkadit.electronicstore.payload;
 
 import lombok.*;
 
+import javax.persistence.Column;
 import java.util.Date;
 
 @Getter
@@ -11,11 +12,11 @@ import java.util.Date;
 @ToString
 public class ProductDto extends BaseEntityDto {
 
-    private Integer productId;
+    private Long productId;
     private String title;
-    private String descrition;
-    private Integer price;
-    private Integer discountedPrice;
+    private String description;
+    private Double price;
+    private Double discountedPrice;
     private Integer quantity;
     private Date addedDate;
     private boolean live;

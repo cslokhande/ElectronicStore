@@ -40,12 +40,12 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public ProductDto update(ProductDto productDto, Integer productId) {
+    public ProductDto update(ProductDto productDto, Long productId) {
         logger.info("Initiating dao call to update product by productId{}",productId);
         Product product = repository.findById(productId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.PRODUCT_NOT_FOUND));
         product.setTitle(productDto.getTitle());
-        product.setDescrition(productDto.getDescrition());
+        product.setDescription(productDto.getDescription());
         product.setPrice(productDto.getPrice());
         product.setDiscountedPrice(productDto.getDiscountedPrice());
         product.setQuantity(productDto.getQuantity());
@@ -57,7 +57,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public void delete(Integer productId) {
+    public void delete(Long productId) {
         logger.info("Initiating dao call to delete product by productId{}",productId);
         Product product = repository.findById(productId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.PRODUCT_NOT_FOUND));
@@ -66,7 +66,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public ProductDto get(Integer productId) {
+    public ProductDto get(Long productId) {
         logger.info("Initiating dao call to get product by productId{}",productId);
         Product product = repository.findById(productId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.PRODUCT_NOT_FOUND));
