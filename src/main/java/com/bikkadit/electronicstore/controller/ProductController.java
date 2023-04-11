@@ -1,7 +1,7 @@
 package com.bikkadit.electronicstore.controller;
 
 import com.bikkadit.electronicstore.apiResponce.ApiResponse;
-import com.bikkadit.electronicstore.apiResponce.UserPageableResponse;
+import com.bikkadit.electronicstore.apiResponce.PageableResponse;
 import com.bikkadit.electronicstore.constant.AppConstant;
 import com.bikkadit.electronicstore.payload.ProductDto;
 import com.bikkadit.electronicstore.service.ProductService;
@@ -60,28 +60,28 @@ public class ProductController {
 
     //get all
     @GetMapping
-    public ResponseEntity<UserPageableResponse> getAll(
+    public ResponseEntity<PageableResponse> getAll(
             @RequestParam(value = "pageNumber",defaultValue = AppConstant.PAGE_NUMBER,required = false)int pageNumber,
             @RequestParam(value = "pageSize",defaultValue = AppConstant.PAGE_SIZE,required = false)int pageSize,
             @RequestParam(value = "sortBy",defaultValue = AppConstant.SORT_BY_PRODUCT_ID,required = false)String sortBy,
             @RequestParam(value = "sortDir",defaultValue = AppConstant.SORT_DIR,required = false)String sortDir
     ){
         logger.info("Initiating request for get all product");
-        UserPageableResponse<ProductDto> pagealeResponse = service.getAll(pageNumber, pageSize, sortBy, sortDir);
+        PageableResponse<ProductDto> pagealeResponse = service.getAll(pageNumber, pageSize, sortBy, sortDir);
         logger.info("Complete request for get all product");
         return new ResponseEntity<>(pagealeResponse,HttpStatus.OK);
     }
 
     //get all live
     @GetMapping("/live")
-    public ResponseEntity<UserPageableResponse> getAllLive(
+    public ResponseEntity<PageableResponse> getAllLive(
             @RequestParam(value = "pageNumber",defaultValue = AppConstant.PAGE_NUMBER,required = false)int pageNumber,
             @RequestParam(value = "pageSize",defaultValue = AppConstant.PAGE_SIZE,required = false)int pageSize,
             @RequestParam(value = "sortBy",defaultValue = AppConstant.SORT_BY_PRODUCT_ID,required = false)String sortBy,
             @RequestParam(value = "sortDir",defaultValue = AppConstant.SORT_DIR,required = false)String sortDir
     ){
         logger.info("Initiating request for get all live product");
-        UserPageableResponse<ProductDto> pagealeResponse = service.getAllLive(pageNumber, pageSize, sortBy, sortDir);
+        PageableResponse<ProductDto> pagealeResponse = service.getAllLive(pageNumber, pageSize, sortBy, sortDir);
         logger.info("Complete request for get all live product");
         return new ResponseEntity<>(pagealeResponse,HttpStatus.OK);
     }
@@ -89,7 +89,7 @@ public class ProductController {
 
     //search all
     @GetMapping("/search/{keyword}")
-    public ResponseEntity<UserPageableResponse> search(
+    public ResponseEntity<PageableResponse> search(
             @PathVariable String keyword,
             @RequestParam(value = "pageNumber",defaultValue = AppConstant.PAGE_NUMBER,required = false)int pageNumber,
             @RequestParam(value = "pageSize",defaultValue = AppConstant.PAGE_SIZE,required = false)int pageSize,
@@ -97,7 +97,7 @@ public class ProductController {
             @RequestParam(value = "sortDir",defaultValue = AppConstant.SORT_DIR,required = false)String sortDir
     ){
         logger.info("Initiating request for search by keyword{}",keyword);
-        UserPageableResponse<ProductDto> pagealeResponse = service.searchByTitle(keyword,pageNumber, pageSize, sortBy, sortDir);
+        PageableResponse<ProductDto> pagealeResponse = service.searchByTitle(keyword,pageNumber, pageSize, sortBy, sortDir);
         logger.info("Complete request for search by keyword{}",keyword);
         return new ResponseEntity<>(pagealeResponse,HttpStatus.OK);
     }

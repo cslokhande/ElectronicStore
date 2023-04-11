@@ -1,6 +1,7 @@
 package com.bikkadit.electronicstore.service;
 
 import com.bikkadit.electronicstore.apiResponce.CategoryResponse;
+import com.bikkadit.electronicstore.apiResponce.PageableResponse;
 import com.bikkadit.electronicstore.payload.CategoryDto;
 
 
@@ -18,7 +19,7 @@ public interface CategoryService {
      //GetAll
      //PageableResponse<CategoryDto> getAllCategory(Integer pageSize, Integer pageNumber, String sortBy, String sortDir);
 
-     CategoryResponse getCategories( int pageNumber,int pageSize, String sortBy, String sortDir);
+     PageableResponse getCategories(int pageNumber, int pageSize, String sortBy, String sortDir);
      //Delete
 
      void deleteByCategoryId(Long categoryId);

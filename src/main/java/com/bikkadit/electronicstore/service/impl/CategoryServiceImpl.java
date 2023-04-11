@@ -1,10 +1,14 @@
 package com.bikkadit.electronicstore.service.impl;
 
+import com.bikkadit.electronicstore.apiResponce.PageableResponse;
 import com.bikkadit.electronicstore.constant.AppConstant;
 import com.bikkadit.electronicstore.exception.ResourceNotFoundException;
+import com.bikkadit.electronicstore.helper.Helper;
 import com.bikkadit.electronicstore.model.Category;
 import com.bikkadit.electronicstore.apiResponce.CategoryResponse;
+import com.bikkadit.electronicstore.model.Product;
 import com.bikkadit.electronicstore.payload.CategoryDto;
+import com.bikkadit.electronicstore.payload.ProductDto;
 import com.bikkadit.electronicstore.repository.CategoryRepo;
 import com.bikkadit.electronicstore.service.CategoryService;
 import org.modelmapper.ModelMapper;
@@ -13,6 +17,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
@@ -64,23 +69,13 @@ public class CategoryServiceImpl implements CategoryService {
 
     //Get all category
     @Override
-    public CategoryResponse getCategories(int pageNumber,int pageSize, String sortBy, String sortDir) {
+    public PageableResponse <CategoryDto> getCategories(int pageNumber, int pageSize, String sortBy, String sortDir) {
         logger.info("Initiating dao call to get all category");
-        Sort sort=(sortDir.equalsIgnoreCase("asc"))?Sort.by(sortBy).ascending():Sort.by(sortBy).descending();
-        PageRequest page = PageRequest.of(pageSize, pageNumber, sort);
-        Page<Category> all = this.categoryRepo.findAll(page);
-        List<Category> content = all.getContent();
-        List<CategoryDto> collect = content.stream().map((cat) -> this.mapper.map(cat, CategoryDto.class))
-                .collect(Collectors.toList());
-        CategoryResponse categoryResponse = new CategoryResponse();
-        categoryResponse.setContent(collect);
-        categoryResponse.setPageSize(all.getSize());
-        categoryResponse.setPageNumber(all.getNumber());
-        categoryResponse.setTotalElement(all.getTotalElements());
-        categoryResponse.setTotalPage(all.getTotalPages());
-        categoryResponse.setLastPage(all.isLast());
+        Sort sort=(sortDir.equalsIgnoreCase("desc"))?(Sort.by(sortBy).descending()):(Sort.by(sortBy).ascending());
+        Pageable pageable= PageRequest.of(pageNumber,pageSize,sort);
+        Page<Category> categories = categoryRepo.findAll(pageable);
         logger.info("Complete dao call to get all category");
-        return categoryResponse;
+        return Helper.getPageableResponse(categories, CategoryDto.class);
     }
 
     @Override

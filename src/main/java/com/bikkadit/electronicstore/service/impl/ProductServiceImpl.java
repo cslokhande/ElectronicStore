@@ -1,6 +1,6 @@
 package com.bikkadit.electronicstore.service.impl;
 
-import com.bikkadit.electronicstore.apiResponce.UserPageableResponse;
+import com.bikkadit.electronicstore.apiResponce.PageableResponse;
 import com.bikkadit.electronicstore.constant.AppConstant;
 import com.bikkadit.electronicstore.exception.ResourceNotFoundException;
 import com.bikkadit.electronicstore.helper.Helper;
@@ -75,7 +75,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public UserPageableResponse<ProductDto> getAll(int pageNumber, int pageSize, String sortBy, String sortDir) {
+    public PageableResponse<ProductDto> getAll(int pageNumber, int pageSize, String sortBy, String sortDir) {
         logger.info("Initiating dao call to get all product");
         Sort sort=(sortDir.equalsIgnoreCase("desc"))?(Sort.by(sortBy).descending()):(Sort.by(sortBy).ascending());
         Pageable pageable= PageRequest.of(pageNumber,pageSize,sort);
@@ -85,7 +85,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public UserPageableResponse<ProductDto> getAllLive(int pageNumber,int pageSize,String sortBy,String sortDir) {
+    public PageableResponse<ProductDto> getAllLive(int pageNumber, int pageSize, String sortBy, String sortDir) {
         logger.info("Initiating dao call to get all product");
         Sort sort=(sortDir.equalsIgnoreCase("desc"))?(Sort.by(sortBy).descending()):(Sort.by(sortBy).ascending());
         Pageable pageable= PageRequest.of(pageNumber,pageSize,sort);
@@ -95,7 +95,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public UserPageableResponse<ProductDto>searchByTitle(String keyword,int pageNumber,int pageSize,String sortBy,String sortDir) {
+    public PageableResponse<ProductDto> searchByTitle(String keyword, int pageNumber, int pageSize, String sortBy, String sortDir) {
         logger.info("Initiating dao call to search by keyword", keyword);
         Sort sort=(sortDir.equalsIgnoreCase("desc"))?(Sort.by(sortBy).descending()):(Sort.by(sortBy).ascending());
         Pageable pageable= PageRequest.of(pageNumber,pageSize,sort);

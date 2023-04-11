@@ -2,6 +2,7 @@ package com.bikkadit.electronicstore.controller;
 
 import com.bikkadit.electronicstore.apiResponce.ApiResponse;
 import com.bikkadit.electronicstore.apiResponce.CategoryResponse;
+import com.bikkadit.electronicstore.apiResponce.PageableResponse;
 import com.bikkadit.electronicstore.constant.AppConstant;
 import com.bikkadit.electronicstore.payload.CategoryDto;
 import com.bikkadit.electronicstore.service.CategoryService;
@@ -57,16 +58,16 @@ public class CategoryController {
     }
 
     @GetMapping("/getAllCategory")
-    public ResponseEntity<CategoryResponse> getAllCategory(
+    public ResponseEntity<PageableResponse> getAllCategory(
             @RequestParam(value = "pageNumber", defaultValue = AppConstant.PAGE_NUMBER, required = false) Integer pageNumber,
             @RequestParam(value = "pageSize", defaultValue = AppConstant.PAGE_SIZE, required = false) Integer pageSize,
             @RequestParam(value = "sortBy", defaultValue = AppConstant.SORTED_BY_CATEGORY_ID, required = false) String sortBy,
             @RequestParam(value = "sortDir", defaultValue = AppConstant.SORT_DIR, required = false) String sortDir) {
 
         logger.info("Initiating request for getAllCategory ");
-        CategoryResponse categories = this.categoryService.getCategories(pageSize, pageNumber, sortBy, sortDir);
+        PageableResponse categories = this.categoryService.getCategories(pageSize, pageNumber, sortBy, sortDir);
         logger.info("Complete request for getAllCategory ");
-        return new ResponseEntity<CategoryResponse>(categories, HttpStatus.OK);
+        return new ResponseEntity<>(categories, HttpStatus.OK);
     }
 
 }

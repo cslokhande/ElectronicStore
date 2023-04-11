@@ -9,9 +9,9 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserPageableResponse<V> {
+public class PageableResponse<V> {
 
-    private List<UserDto> content;
+    private List<V> content;
 
     private int pageNumber;
 

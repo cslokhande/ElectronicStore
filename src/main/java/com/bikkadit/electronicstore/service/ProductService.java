@@ -1,6 +1,6 @@
 package com.bikkadit.electronicstore.service;
 
-import com.bikkadit.electronicstore.apiResponce.UserPageableResponse;
+import com.bikkadit.electronicstore.apiResponce.PageableResponse;
 import com.bikkadit.electronicstore.payload.ProductDto;
 
 public interface ProductService {
@@ -19,12 +19,12 @@ public interface ProductService {
     ProductDto get(Long productId);
 
     //get all
-    UserPageableResponse<ProductDto> getAll(int pageNumber, int pageSize, String sortBy, String sortDir);
+    PageableResponse<ProductDto> getAll(int pageNumber, int pageSize, String sortBy, String sortDir);
 
     //get all:live
-    UserPageableResponse<ProductDto>getAllLive(int pageNumber,int pageSize,String sortBy,String sortDir);
+    PageableResponse<ProductDto> getAllLive(int pageNumber, int pageSize, String sortBy, String sortDir);
 
     //search product
-    UserPageableResponse<ProductDto>searchByTitle(String keyword,int pageNumber,int pageSize,String sortBy,String sortDir);
+    PageableResponse<ProductDto> searchByTitle(String keyword, int pageNumber, int pageSize, String sortBy, String sortDir);
 
 }

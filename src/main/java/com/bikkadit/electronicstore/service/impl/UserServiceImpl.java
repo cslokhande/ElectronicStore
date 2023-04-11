@@ -4,7 +4,7 @@ import com.bikkadit.electronicstore.constant.AppConstant;
 import com.bikkadit.electronicstore.exception.ResourceNotFoundException;
 import com.bikkadit.electronicstore.helper.Helper;
 import com.bikkadit.electronicstore.model.User;
-import com.bikkadit.electronicstore.apiResponce.UserPageableResponse;
+import com.bikkadit.electronicstore.apiResponce.PageableResponse;
 import com.bikkadit.electronicstore.payload.UserDto;
 import com.bikkadit.electronicstore.repository.UserRepo;
 import com.bikkadit.electronicstore.service.UserService;
@@ -86,20 +86,21 @@ public class UserServiceImpl implements UserService {
         return this.UserToDto(userEmail);
     }
     @Override
-    public UserPageableResponse<UserDto> getAllUser(int pageNumber, int pageSize, String sortBy, String sortDir) {
+    public PageableResponse<UserDto> getAllUser(int pageNumber, int pageSize, String sortBy, String sortDir) {
         logger.info("Initiating dao call to get all user");
-        Sort sort=(sortDir.equalsIgnoreCase("asc"))?Sort.by(sortBy).ascending():Sort.by(sortBy).descending();
 
-//        Sort sort = null;
-//        if (sortDir.equalsIgnoreCase("asc")) {
-//            sort = Sort.by(sortBy).ascending();
+//        if (sortDir.equalsIgnoreCase("desc")) {
+//           Sort sort = Sort.by(sortBy).descending();
 //        } else {
-//            sort = Sort.by(sortBy).descending();
+//            Sort sort = Sort.by(sortBy).ascending();
 //        }
+//
+// //     The above if_else statement can write as bellow by using
+        Sort sort=(sortDir.equalsIgnoreCase("desc"))?Sort.by(sortBy).ascending():Sort.by(sortBy).descending();
 
         Pageable p = PageRequest.of(pageSize, pageNumber, sort);
         Page<User> userPage = this.userRepo.findAll(p);
-        UserPageableResponse<UserDto> response = Helper.getPageableResponse(userPage,UserDto.class);
+        PageableResponse<UserDto> response = Helper.getPageableResponse(userPage,UserDto.class);
         logger.info("Initiating dao call to get all user");
         return response;
 
