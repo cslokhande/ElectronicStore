@@ -1,18 +1,16 @@
 package com.bikkadit.electronicstore.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
 @Setter
 @Getter
-@Table(name="Category_Data")
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
+@Table(name="Category_Data")
 public class Category extends BaseEntityClass {
 
      @Id

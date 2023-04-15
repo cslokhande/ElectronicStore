@@ -1,9 +1,6 @@
 package com.bikkadit.electronicstore.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
@@ -14,6 +11,7 @@ import java.util.Date;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Table(name="product_data")
 public class Product extends BaseEntityClass {
 
@@ -30,6 +28,5 @@ public class Product extends BaseEntityClass {
     private Date addedDate;
     private boolean live;
     private boolean stock;
-
 }
 

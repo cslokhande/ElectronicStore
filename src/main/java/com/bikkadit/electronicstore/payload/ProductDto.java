@@ -9,7 +9,7 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
+@Builder
 public class ProductDto extends BaseEntityDto {
 
     private Long productId;
@@ -20,5 +20,5 @@ public class ProductDto extends BaseEntityDto {
     private Integer quantity;
     private Date addedDate;
     private boolean live;
-
+    private boolean stock;
 }

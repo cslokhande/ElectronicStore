@@ -5,11 +5,8 @@ import com.bikkadit.electronicstore.constant.AppConstant;
 import com.bikkadit.electronicstore.exception.ResourceNotFoundException;
 import com.bikkadit.electronicstore.helper.Helper;
 import com.bikkadit.electronicstore.model.Category;
-import com.bikkadit.electronicstore.apiResponce.CategoryResponse;
-import com.bikkadit.electronicstore.model.Product;
 import com.bikkadit.electronicstore.payload.CategoryDto;
-import com.bikkadit.electronicstore.payload.ProductDto;
-import com.bikkadit.electronicstore.repository.CategoryRepo;
+import com.bikkadit.electronicstore.repository.CategoryRepository;
 import com.bikkadit.electronicstore.service.CategoryService;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
@@ -21,16 +18,13 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 @Service
 public class CategoryServiceImpl implements CategoryService {
 
     Logger logger = LoggerFactory.getLogger(CategoryServiceImpl.class);
 
     @Autowired
-    private CategoryRepo categoryRepo;
+    private CategoryRepository categoryRepo;
 
     @Autowired
     private ModelMapper mapper;

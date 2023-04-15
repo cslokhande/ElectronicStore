@@ -1,0 +1,16 @@
+2023-04-06 22:59:47,353 INFO  StartupInfoLogger:55 - [] Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 29888 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+2023-04-06 22:59:47,356 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-06 22:59:47,357 INFO  SpringApplication:637 - [] The following 1 profile is active: "dev"
+2023-04-06 22:59:52,114 INFO  StartupInfoLogger:61 - [] Started ElectronicStoreApplication in 5.223 seconds (JVM running for 5.916)
+2023-04-06 23:00:57,158 INFO  StartupInfoLogger:55 - [] Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 11340 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+2023-04-06 23:00:57,162 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-06 23:00:57,163 INFO  SpringApplication:637 - [] The following 1 profile is active: "prod"
+2023-04-06 23:01:01,044 INFO  StartupInfoLogger:61 - [] Started ElectronicStoreApplication in 4.262 seconds (JVM running for 4.847)
+2023-04-06 23:36:24,188 INFO  StartupInfoLogger:55 - [] Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 13112 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+2023-04-06 23:36:24,191 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-06 23:36:24,191 INFO  SpringApplication:637 - [] The following 1 profile is active: "prod"
+2023-04-06 23:36:28,835 INFO  StartupInfoLogger:61 - [] Started ElectronicStoreApplication in 5.082 seconds (JVM running for 5.786)
+2023-04-06 23:37:18,846 INFO  StartupInfoLogger:55 - [] Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 24920 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+2023-04-06 23:37:18,849 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-06 23:37:18,851 INFO  SpringApplication:637 - [] The following 1 profile is active: "prod"
+2023-04-06 23:37:22,921 INFO  StartupInfoLogger:61 - [] Started ElectronicStoreApplication in 4.443 seconds (JVM running for 5.031)
