@@ -18,6 +18,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProductServiceImpl implements ProductService {
 
@@ -61,8 +63,8 @@ public class ProductServiceImpl implements ProductService {
         logger.info("Initiating dao call to delete product by productId{}",productId);
         Product product = repository.findById(productId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.PRODUCT_NOT_FOUND));
-        logger.info("Complete dao call to delete product by productId{}",productId);
         repository.delete(product);
+        logger.info("Complete dao call to delete product by productId{}",productId);
     }
 
     @Override
@@ -99,7 +101,7 @@ public class ProductServiceImpl implements ProductService {
         logger.info("Initiating dao call to search by keyword", keyword);
         Sort sort=(sortDir.equalsIgnoreCase("desc"))?(Sort.by(sortBy).descending()):(Sort.by(sortBy).ascending());
         Pageable pageable= PageRequest.of(pageNumber,pageSize,sort);
-        Page<Product> page = repository.findByTitleContaining(keyword,pageable);
+        Page<Product> page = repository.findByTitleContaining(keyword, pageable);
         logger.info("Complete dao call to search by keyword{}",keyword);
         return Helper.getPageableResponse(page,ProductDto.class);
     }

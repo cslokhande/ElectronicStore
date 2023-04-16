@@ -98,7 +98,7 @@ public class UserServiceImpl implements UserService {
 // //     The above if_else statement can write as bellow by using
         Sort sort=(sortDir.equalsIgnoreCase("desc"))?Sort.by(sortBy).ascending():Sort.by(sortBy).descending();
 
-        Pageable p = PageRequest.of(pageSize, pageNumber, sort);
+        Pageable p = PageRequest.of(pageNumber,pageSize, sort);
         Page<User> userPage = this.userRepo.findAll(p);
         PageableResponse<UserDto> response = Helper.getPageableResponse(userPage,UserDto.class);
         logger.info("Initiating dao call to get all user");

@@ -65,7 +65,7 @@ public class CategoryController {
             @RequestParam(value = "sortDir", defaultValue = AppConstant.SORT_DIR, required = false) String sortDir) {
 
         logger.info("Initiating request for getAllCategory ");
-        PageableResponse categories = this.categoryService.getCategories(pageSize, pageNumber, sortBy, sortDir);
+        PageableResponse categories = this.categoryService.getCategories(pageNumber, pageSize, sortBy, sortDir);
         logger.info("Complete request for getAllCategory ");
         return new ResponseEntity<>(categories, HttpStatus.OK);
     }
