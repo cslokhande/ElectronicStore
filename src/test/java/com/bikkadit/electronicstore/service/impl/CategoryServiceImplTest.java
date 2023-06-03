@@ -4,15 +4,12 @@ import com.bikkadit.electronicstore.BaseTest;
 import com.bikkadit.electronicstore.model.Category;
 import com.bikkadit.electronicstore.payload.CategoryDto;
 import com.bikkadit.electronicstore.repository.CategoryRepository;
-<<<<<<< HEAD
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-=======
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
->>>>>>> origin/master
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -22,11 +19,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-<<<<<<< HEAD
-class CategoryServiceImplTest extends BaseTest{
-=======
 class CategoryServiceImplTest extends BaseTest {
->>>>>>> origin/master
 
     @MockBean
     private CategoryRepository categoryRepository;
@@ -62,15 +55,12 @@ class CategoryServiceImplTest extends BaseTest {
     @Test
     void create() {
 //        Arrange
-     //   Mockito.when(categoryRepository.save(Mockito.any())).thenReturn(category);
+        Mockito.when(categoryRepository.save(Mockito.any())).thenReturn(category);
 //        Act
         CategoryDto category2 = categoryService.create(modelMapper.map(category, CategoryDto.class));
 //        Assert
-  //      Assertions.assertNotNull(category2);
-   //     Assertions.assertEquals(category2.getTitle(), category2.getTitle());
-//        Act
-//        Assert
-
+        Assertions.assertNotNull(category2);
+        Assertions.assertEquals(category2.getTitle(), category2.getTitle());
     }
 
     @Test
@@ -110,10 +100,5 @@ class CategoryServiceImplTest extends BaseTest {
 //        Act
 
 //        Assert
-
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 }

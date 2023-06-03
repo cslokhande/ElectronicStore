@@ -76,11 +76,7 @@ class ProductServiceImplTest extends BaseTest {
         ProductDto update = productService.update(productDto, id);
 //        Assert
         Assertions.assertEquals(productDto.getTitle(), update.getTitle());
-<<<<<<< HEAD
         Assertions.assertThrows(ResourceNotFoundException.class, () -> productService.update(productDto, 111l));
-=======
-        Assertions.assertThrows(ResourseNotFoundException.class, () -> productService.update(productDto, 111l));
->>>>>>> origin/master
     }
 
     @Test
@@ -104,11 +100,7 @@ class ProductServiceImplTest extends BaseTest {
         ProductDto product2 = productService.get(id);
 //        Assert
         Assertions.assertNotNull(product2);
-<<<<<<< HEAD
         Assertions.assertThrows(ResourceNotFoundException.class, () -> productService.get(111l));
-=======
-        Assertions.assertThrows(ResourseNotFoundException.class, () -> productService.get(111l));
->>>>>>> origin/master
     }
 
     @Test
@@ -144,8 +136,4 @@ class ProductServiceImplTest extends BaseTest {
 //        Assert
         Assertions.assertEquals(2, all.getContent().size());
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
 }
