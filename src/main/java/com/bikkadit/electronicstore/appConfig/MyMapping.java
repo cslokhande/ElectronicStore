@@ -1,4 +1,4 @@
-package com.bikkadit.electronicstore.myConfig;
+package com.bikkadit.electronicstore.appConfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
