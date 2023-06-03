@@ -6,7 +6,7 @@ import com.bikkadit.electronicstore.helper.Helper;
 import com.bikkadit.electronicstore.model.User;
 import com.bikkadit.electronicstore.apiResponce.PageableResponse;
 import com.bikkadit.electronicstore.payload.UserDto;
-import com.bikkadit.electronicstore.repository.UserRepo;
+import com.bikkadit.electronicstore.repository.UserRepository;
 import com.bikkadit.electronicstore.service.UserService;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService {
     Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
    @Autowired
-    private UserRepo userRepo;
+    private UserRepository userRepo;
 
    @Autowired
    private ModelMapper modelMapper;
@@ -35,11 +35,12 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDto saveUser(UserDto userDto) {
         logger.info("Initiating dao call to save User");
-        User user =  this.dtoToUser(userDto);
+//        User user =  this.dtoToUser(userDto);
+        User user = this.modelMapper.map(userDto, User.class);
         user.setIsactive(AppConstant.YES);
         User save = this.userRepo.save(user);
         logger.info("Complete dao call to save User");
-        return  this.UserToDto(save);
+        return  this.modelMapper.map(save, UserDto.class);
     }
 
     @Override
