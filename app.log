@@ -370,3 +370,129 @@
 06:03 20:54:50.504 [main] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to update product by productId10
 06:03 20:54:50.509 [main] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to update product by productId10
 06:03 20:54:50.548 [main] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to update product by productId111
+06:03 21:02:18.448 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 18.0.1.1 on HP-PC with PID 7240 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\ElectronicStore)
+06:03 21:02:18.449 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+06:03 21:02:18.500 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+06:03 21:02:18.500 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+06:03 21:02:20.179 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+06:03 21:02:20.299 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1799 ms
+06:03 21:02:22.465 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06:03 21:02:22.728 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+06:03 21:02:22.920 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+06:03 21:02:23.270 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 5.192 seconds (JVM running for 5.828)
+06:03 21:04:38.127 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 18.0.1.1 on HP-PC with PID 13820 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\ElectronicStore)
+06:03 21:04:38.128 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+06:03 21:04:38.183 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+06:03 21:04:38.183 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+06:03 21:04:39.867 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+06:03 21:04:39.978 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1793 ms
+06:03 21:04:42.460 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06:03 21:04:42.712 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+06:03 21:04:42.902 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+06:03 21:04:43.214 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 5.458 seconds (JVM running for 6.164)
+06:03 21:07:36.255 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 18.0.1.1 on HP-PC with PID 21920 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\ElectronicStore)
+06:03 21:07:36.256 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+06:03 21:07:36.312 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+06:03 21:07:36.312 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+06:03 21:07:37.945 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+06:03 21:07:38.058 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1745 ms
+06:03 21:07:40.155 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06:03 21:07:40.408 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+06:03 21:07:40.592 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+06:03 21:07:40.922 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 5.015 seconds (JVM running for 5.633)
+06:03 21:09:37.374 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 18.0.1.1 on HP-PC with PID 25904 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\ElectronicStore)
+06:03 21:09:37.374 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+06:03 21:09:37.423 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+06:03 21:09:37.423 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+06:03 21:09:39.030 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+06:03 21:09:39.136 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1712 ms
+06:03 21:09:41.206 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06:03 21:09:41.473 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+06:03 21:09:41.657 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+06:03 21:09:41.664 [restartedMain] [WARN] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
+06:03 21:09:41.715 [restartedMain] [INFO] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+06:03 21:09:41.740 [restartedMain] [ERROR] [o.s.boot.SpringApplication] - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.bikkadit.electronicstore.ElectronicStoreApplication.main(ElectronicStoreApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
+	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56)
+	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113)
+	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89)
+	at java.base/java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:473)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:220)
+	at java.base/java.util.Arrays.sort(Arrays.java:1307)
+	at java.base/java.util.ArrayList.sort(ArrayList.java:1721)
+	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107)
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91)
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 17 common frames omitted
+06:03 21:10:06.695 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 18.0.1.1 on HP-PC with PID 21708 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\ElectronicStore)
+06:03 21:10:06.697 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+06:03 21:10:06.748 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+06:03 21:10:06.748 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+06:03 21:10:08.373 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+06:03 21:10:08.482 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1733 ms
+06:03 21:10:10.593 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06:03 21:10:10.871 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+06:03 21:10:11.064 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+06:03 21:10:11.393 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 5.029 seconds (JVM running for 5.671)
+06:03 21:11:18.159 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 18.0.1.1 on HP-PC with PID 9968 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\ElectronicStore)
+06:03 21:11:18.161 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+06:03 21:11:18.210 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+06:03 21:11:18.211 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+06:03 21:11:19.805 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+06:03 21:11:19.907 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1695 ms
+06:03 21:11:21.966 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06:03 21:11:22.210 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+06:03 21:11:22.388 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+06:03 21:11:22.732 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 4.9 seconds (JVM running for 5.537)
+06:03 21:13:02.078 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 18.0.1.1 on HP-PC with PID 5036 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\ElectronicStore)
+06:03 21:13:02.080 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+06:03 21:13:02.129 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+06:03 21:13:02.129 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+06:03 21:13:03.730 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+06:03 21:13:03.833 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1703 ms
+06:03 21:13:05.869 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06:03 21:13:06.114 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+06:03 21:13:06.303 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+06:03 21:13:06.644 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 4.886 seconds (JVM running for 5.489)
