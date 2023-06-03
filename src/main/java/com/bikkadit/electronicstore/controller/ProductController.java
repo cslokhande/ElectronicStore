@@ -97,7 +97,7 @@ public class ProductController {
             @RequestParam(value = "sortDir",defaultValue = AppConstant.SORT_DIR,required = false)String sortDir
     ){
         logger.info("Initiating request for search by keyword{}",keyword);
-        PageableResponse<ProductDto> pagealeResponse = service.searchByTitle(keyword,pageNumber, pageSize, sortBy, sortDir);
+        PageableResponse<ProductDto> pagealeResponse = service.searchByTitle(keyword, pageNumber, pageSize, sortBy, sortDir);
         logger.info("Complete request for search by keyword{}",keyword);
         return new ResponseEntity<>(pagealeResponse,HttpStatus.OK);
     }

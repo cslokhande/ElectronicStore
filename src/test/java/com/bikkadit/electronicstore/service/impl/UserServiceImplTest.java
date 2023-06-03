@@ -34,12 +34,10 @@ class UserServiceImplTest extends BaseTest {
     private UserService userService;
 
     @Autowired
-    private ModelMapper mapper;
+    private ModelMapper modelMapper;
 
     User user;
-
     User user1;
-
     List<User> users;
 
     UserDto userDto;
@@ -65,10 +63,10 @@ class UserServiceImplTest extends BaseTest {
 //        Arrange
         Mockito.when(userRepository.save(Mockito.any())).thenReturn(user);
 //        Act
-        UserDto user1 = userService.saveUser(userDto);
+        UserDto user2 = userService.saveUser(modelMapper.map(user,UserDto.class));
 //        Assert
-        Assertions.assertNotNull(user1);
-        Assertions.assertEquals(userDto.getName(), user1.getName());
+        Assertions.assertNotNull(user2);
+        Assertions.assertEquals(user.getName(), user2.getName());
     }
 
 
@@ -123,6 +121,7 @@ class UserServiceImplTest extends BaseTest {
         UserDto userDto1 = userService.getUser(id);
 //        Assert
         Assertions.assertNotNull(userDto1);
+        Assertions.assertThrows(ResourceNotFoundException.class, ()->userService.getUser(111l));
     }
 
     @Test
@@ -142,14 +141,14 @@ class UserServiceImplTest extends BaseTest {
         Page<User> page=new PageImpl<>(users);
         Mockito.when(userRepository.findAll((Pageable) Mockito.any())).thenReturn(page);
         //Act
-        PageableResponse<UserDto> allUser = userService.getAllUser(1, 5, AppConstant.SORT_BY_USER_ID, AppConstant.SORT_DIR);
+        PageableResponse<UserDto> allUser = userService.getAllUser(1, 5,AppConstant.SORT_BY_USER_ID, AppConstant.SORT_DIR);
         //Assert
         Assertions.assertEquals(2, allUser.getContent().size());
     }
 
     @Test
     void searchUser() {
-        String key= "a";
+       String key= "a";
         //Arrange
         Mockito.when(userRepository.findByNameContaining(key)).thenReturn(users);
         //Act

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 06:03 19:45:20.937 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bikkadit.electronicstore.service.impl.UserServiceImplTest], using SpringBootContextLoader
 06:03 19:45:22.346 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] - Found @SpringBootConfiguration com.bikkadit.electronicstore.ElectronicStoreApplication for test class com.bikkadit.electronicstore.service.impl.UserServiceImplTest
 06:03 19:45:22.442 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
@@ -60,3 +61,301 @@
 06:03 20:18:25.386 [main] [INFO] [c.b.e.s.impl.CategoryServiceImplTest] - Started CategoryServiceImplTest in 4.58 seconds (JVM running for 5.728)
 06:03 20:18:25.454 [main] [INFO] [c.b.e.s.impl.CategoryServiceImpl] - Initiating dao call to save create
 06:03 20:18:25.458 [main] [INFO] [c.b.e.s.impl.CategoryServiceImpl] - Complete dao call to save create
+=======
+04:16 00:20:02.773 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bikkadit.electronicstore.service.impl.ProductServiceImplTest], using SpringBootContextLoader
+04:16 00:20:02.902 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] - Found @SpringBootConfiguration com.bikkadit.electronicstore.ElectronicStoreApplication for test class com.bikkadit.electronicstore.service.impl.ProductServiceImplTest
+04:16 00:20:02.996 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+04:16 00:20:03.013 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@26bab2f1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3724af13, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@68ead359, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6b53bcc2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@180da663, org.springframework.test.context.support.DirtiesContextTestExecutionListener@a43ce46, org.springframework.test.context.transaction.TransactionalTestExecutionListener@340da44c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@424ebba3, org.springframework.test.context.event.EventPublishingTestExecutionListener@37052337, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2320fa6f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7a560583, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4d722ac9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@53f0a4cb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@77a7cf58, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3d97a632]
+04:16 00:20:03.291 [main] [INFO] [c.b.e.s.impl.ProductServiceImplTest] - Starting ProductServiceImplTest using Java 17.0.5 on HP-PC with PID 21712 (started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 00:20:03.293 [main] [INFO] [c.b.e.s.impl.ProductServiceImplTest] - The following 1 profile is active: "dev"
+04:16 00:20:06.506 [main] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 00:20:07.004 [main] [INFO] [c.b.e.s.impl.ProductServiceImplTest] - Started ProductServiceImplTest in 3.953 seconds (JVM running for 5.006)
+04:16 00:21:54.024 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bikkadit.electronicstore.service.impl.ProductServiceImplTest], using SpringBootContextLoader
+04:16 00:21:54.150 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] - Found @SpringBootConfiguration com.bikkadit.electronicstore.ElectronicStoreApplication for test class com.bikkadit.electronicstore.service.impl.ProductServiceImplTest
+04:16 00:21:54.243 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+04:16 00:21:54.257 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@61e94def, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3300f4fd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@ebb6851, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@70ab2d48, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5b068087, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6f152006, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a393455, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@13518f37, org.springframework.test.context.event.EventPublishingTestExecutionListener@7cbc3762, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3a6f2de3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@49872d67, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@56303b57, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4b2a01d4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@8692d67, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@78f5c518]
+04:16 00:21:54.567 [main] [INFO] [c.b.e.s.impl.ProductServiceImplTest] - Starting ProductServiceImplTest using Java 17.0.5 on HP-PC with PID 5068 (started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 00:21:54.568 [main] [INFO] [c.b.e.s.impl.ProductServiceImplTest] - The following 1 profile is active: "dev"
+04:16 00:21:57.768 [main] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 00:21:58.304 [main] [INFO] [c.b.e.s.impl.ProductServiceImplTest] - Started ProductServiceImplTest in 4.007 seconds (JVM running for 5.044)
+04:16 00:27:14.105 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 20560 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 00:27:14.106 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+04:16 00:27:14.159 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04:16 00:27:14.159 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04:16 00:27:15.642 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+04:16 00:27:15.748 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1589 ms
+04:16 00:27:17.612 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 00:27:17.947 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+04:16 00:27:17.985 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+04:16 00:27:17.994 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 4.224 seconds (JVM running for 4.82)
+04:16 00:27:27.959 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.UserController] - Initiating request for get all user
+04:16 00:27:27.959 [http-nio-9090-exec-2] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 00:27:28.212 [http-nio-9090-exec-2] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 00:27:28.212 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.UserController] - Complete request for get all user
+04:16 00:30:30.070 [http-nio-9090-exec-5] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all live product
+04:16 00:30:30.071 [http-nio-9090-exec-5] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 00:30:30.092 [http-nio-9090-exec-5] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 00:30:30.092 [http-nio-9090-exec-5] [INFO] [c.b.e.controller.ProductController] - Complete request for get all live product
+04:16 00:40:17.018 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 7560 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 00:40:17.018 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+04:16 00:40:17.072 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04:16 00:40:17.072 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04:16 00:40:18.562 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+04:16 00:40:18.658 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1585 ms
+04:16 00:40:20.453 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 00:40:20.757 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+04:16 00:40:20.792 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+04:16 00:40:20.800 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 4.123 seconds (JVM running for 4.763)
+04:16 00:40:29.213 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all live product
+04:16 00:40:29.213 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 00:40:29.347 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 00:40:29.349 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Complete request for get all live product
+04:16 00:40:31.752 [http-nio-9090-exec-5] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all live product
+04:16 00:40:31.752 [http-nio-9090-exec-5] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 00:40:31.752 [http-nio-9090-exec-5] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 00:40:31.752 [http-nio-9090-exec-5] [INFO] [c.b.e.controller.ProductController] - Complete request for get all live product
+04:16 00:44:11.999 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 18828 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 00:44:12.000 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+04:16 00:44:12.048 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04:16 00:44:12.048 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04:16 00:44:13.384 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+04:16 00:44:13.482 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1433 ms
+04:16 00:44:15.246 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 00:44:15.564 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+04:16 00:44:15.602 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+04:16 00:44:15.612 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 3.946 seconds (JVM running for 4.535)
+04:16 00:45:44.714 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all live product
+04:16 00:45:44.714 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 00:45:44.866 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 00:45:44.868 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Complete request for get all live product
+04:16 00:46:45.718 [http-nio-9090-exec-5] [INFO] [c.b.e.controller.UserController] - Initiating request for get all user
+04:16 00:46:45.718 [http-nio-9090-exec-5] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 00:46:45.793 [http-nio-9090-exec-5] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 00:46:45.793 [http-nio-9090-exec-5] [INFO] [c.b.e.controller.UserController] - Complete request for get all user
+04:16 00:51:40.978 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 16476 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 00:51:40.979 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+04:16 00:51:41.030 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04:16 00:51:41.030 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04:16 00:51:42.424 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+04:16 00:51:42.514 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1483 ms
+04:16 00:51:44.423 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 00:51:44.742 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+04:16 00:51:44.782 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+04:16 00:51:44.792 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 4.149 seconds (JVM running for 4.735)
+04:16 00:51:55.478 [http-nio-9090-exec-1] [INFO] [c.b.e.controller.UserController] - Initiating request for get all user
+04:16 00:51:55.479 [http-nio-9090-exec-1] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 00:51:55.705 [http-nio-9090-exec-1] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 00:51:55.705 [http-nio-9090-exec-1] [INFO] [c.b.e.controller.UserController] - Complete request for get all user
+04:16 00:52:23.168 [http-nio-9090-exec-3] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all live product
+04:16 00:52:23.168 [http-nio-9090-exec-3] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 00:52:23.187 [http-nio-9090-exec-3] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 00:52:23.188 [http-nio-9090-exec-3] [INFO] [c.b.e.controller.ProductController] - Complete request for get all live product
+04:16 00:52:25.558 [http-nio-9090-exec-4] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all live product
+04:16 00:52:25.558 [http-nio-9090-exec-4] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 00:52:25.563 [http-nio-9090-exec-4] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 00:52:25.564 [http-nio-9090-exec-4] [INFO] [c.b.e.controller.ProductController] - Complete request for get all live product
+04:16 00:52:42.280 [http-nio-9090-exec-5] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all live product
+04:16 00:52:42.280 [http-nio-9090-exec-5] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 00:52:42.287 [http-nio-9090-exec-5] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 00:52:42.287 [http-nio-9090-exec-5] [INFO] [c.b.e.controller.ProductController] - Complete request for get all live product
+04:16 00:53:49.747 [http-nio-9090-exec-8] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all live product
+04:16 00:53:49.747 [http-nio-9090-exec-8] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 00:53:49.755 [http-nio-9090-exec-8] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 00:53:49.755 [http-nio-9090-exec-8] [INFO] [c.b.e.controller.ProductController] - Complete request for get all live product
+04:16 01:01:39.886 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all product
+04:16 01:01:39.886 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 01:01:39.894 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 01:01:39.894 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Complete request for get all product
+04:16 01:03:10.095 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 300 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 01:03:10.096 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+04:16 01:03:10.139 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04:16 01:03:10.139 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04:16 01:03:11.433 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+04:16 01:03:11.525 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1385 ms
+04:16 01:03:13.209 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 01:03:13.500 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+04:16 01:03:13.530 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+04:16 01:03:13.540 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 3.778 seconds (JVM running for 4.331)
+04:16 01:03:21.830 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all product
+04:16 01:03:21.830 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 01:03:21.963 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 01:03:21.965 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Complete request for get all product
+04:16 01:04:38.473 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 20840 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 01:04:38.474 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+04:16 01:04:38.517 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04:16 01:04:38.517 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04:16 01:04:39.856 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+04:16 01:04:39.943 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1426 ms
+04:16 01:04:41.715 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 01:04:42.029 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+04:16 01:04:42.066 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+04:16 01:04:42.077 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 3.921 seconds (JVM running for 4.533)
+04:16 01:04:59.641 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.UserController] - Initiating request for get all user
+04:16 01:04:59.643 [http-nio-9090-exec-2] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 01:04:59.844 [http-nio-9090-exec-2] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 01:04:59.844 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.UserController] - Complete request for get all user
+04:16 01:08:05.166 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 22628 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 01:08:05.167 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+04:16 01:08:05.215 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04:16 01:08:05.215 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04:16 01:08:06.556 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+04:16 01:08:06.647 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1431 ms
+04:16 01:08:08.397 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 01:08:08.688 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+04:16 01:08:08.721 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+04:16 01:08:08.731 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 3.869 seconds (JVM running for 4.439)
+04:16 01:08:33.022 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.UserController] - Initiating request for get all user
+04:16 01:08:33.022 [http-nio-9090-exec-2] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 01:08:33.176 [http-nio-9090-exec-2] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 01:08:33.176 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.UserController] - Complete request for get all user
+04:16 01:10:05.097 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 14048 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 01:10:05.098 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+04:16 01:10:05.146 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04:16 01:10:05.146 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04:16 01:10:06.661 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+04:16 01:10:06.750 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1604 ms
+04:16 01:10:08.522 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 01:10:08.842 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+04:16 01:10:08.879 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+04:16 01:10:08.891 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 4.098 seconds (JVM running for 4.676)
+04:16 01:10:09.579 [http-nio-9090-exec-1] [INFO] [c.b.e.controller.UserController] - Initiating request for get all user
+04:16 01:10:09.580 [http-nio-9090-exec-1] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 01:10:09.714 [http-nio-9090-exec-1] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 01:10:09.714 [http-nio-9090-exec-1] [INFO] [c.b.e.controller.UserController] - Complete request for get all user
+04:16 01:11:10.059 [http-nio-9090-exec-3] [INFO] [c.b.e.controller.CategoryController] - Initiating request for getAllCategory 
+04:16 01:11:10.060 [http-nio-9090-exec-3] [INFO] [c.b.e.s.impl.CategoryServiceImpl] - Initiating dao call to get all category
+04:16 01:11:10.086 [http-nio-9090-exec-3] [INFO] [c.b.e.s.impl.CategoryServiceImpl] - Complete dao call to get all category
+04:16 01:11:10.089 [http-nio-9090-exec-3] [INFO] [c.b.e.controller.CategoryController] - Complete request for getAllCategory 
+04:16 01:12:23.890 [http-nio-9090-exec-6] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all product
+04:16 01:12:23.890 [http-nio-9090-exec-6] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 01:12:23.902 [http-nio-9090-exec-6] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 01:12:23.902 [http-nio-9090-exec-6] [INFO] [c.b.e.controller.ProductController] - Complete request for get all product
+04:16 01:14:20.471 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 5848 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 01:14:20.473 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+04:16 01:14:20.522 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04:16 01:14:20.522 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04:16 01:14:21.873 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+04:16 01:14:21.993 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1471 ms
+04:16 01:14:24.032 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 01:14:24.321 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+04:16 01:14:24.353 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+04:16 01:14:24.362 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 4.191 seconds (JVM running for 4.82)
+04:16 01:14:33.580 [http-nio-9090-exec-1] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all product
+04:16 01:14:33.580 [http-nio-9090-exec-1] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 01:14:33.744 [http-nio-9090-exec-1] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 01:14:33.745 [http-nio-9090-exec-1] [INFO] [c.b.e.controller.ProductController] - Complete request for get all product
+04:16 01:16:06.783 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 17296 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 01:16:06.784 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+04:16 01:16:06.832 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04:16 01:16:06.832 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04:16 01:16:08.222 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+04:16 01:16:08.323 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1490 ms
+04:16 01:16:10.304 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 01:16:10.618 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+04:16 01:16:10.654 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+04:16 01:16:10.665 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 4.188 seconds (JVM running for 4.792)
+04:16 01:16:13.644 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all product
+04:16 01:16:13.644 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 01:16:13.791 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 01:16:13.794 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Complete request for get all product
+04:16 01:16:54.982 [http-nio-9090-exec-3] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all product
+04:16 01:16:54.983 [http-nio-9090-exec-3] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 01:16:55.001 [http-nio-9090-exec-3] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 01:16:55.028 [http-nio-9090-exec-3] [INFO] [c.b.e.controller.ProductController] - Complete request for get all product
+04:16 01:19:37.336 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 20492 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 01:19:37.337 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+04:16 01:19:37.387 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04:16 01:19:37.387 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04:16 01:19:38.749 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+04:16 01:19:38.849 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1462 ms
+04:16 01:19:40.619 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 01:19:40.947 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+04:16 01:19:40.979 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+04:16 01:19:40.987 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 3.967 seconds (JVM running for 4.707)
+04:16 01:19:41.712 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all product
+04:16 01:19:41.713 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 01:19:41.852 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 01:19:41.876 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Complete request for get all product
+04:16 01:20:08.760 [http-nio-9090-exec-3] [INFO] [c.b.e.controller.CategoryController] - Initiating request for getAllCategory 
+04:16 01:20:08.761 [http-nio-9090-exec-3] [INFO] [c.b.e.s.impl.CategoryServiceImpl] - Initiating dao call to get all category
+04:16 01:20:08.775 [http-nio-9090-exec-3] [INFO] [c.b.e.s.impl.CategoryServiceImpl] - Complete dao call to get all category
+04:16 01:20:08.782 [http-nio-9090-exec-3] [INFO] [c.b.e.controller.CategoryController] - Complete request for getAllCategory 
+04:16 01:21:26.222 [http-nio-9090-exec-5] [INFO] [c.b.e.controller.UserController] - Initiating request for get all user
+04:16 01:21:26.223 [http-nio-9090-exec-5] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 01:21:26.237 [http-nio-9090-exec-5] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 01:21:26.237 [http-nio-9090-exec-5] [INFO] [c.b.e.controller.UserController] - Complete request for get all user
+04:16 01:23:17.438 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 15312 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 01:23:17.439 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+04:16 01:23:17.483 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04:16 01:23:17.483 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04:16 01:23:18.824 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+04:16 01:23:18.917 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1433 ms
+04:16 01:23:20.641 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 01:23:20.944 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+04:16 01:23:20.978 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+04:16 01:23:20.987 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 3.841 seconds (JVM running for 4.447)
+04:16 01:23:27.717 [http-nio-9090-exec-1] [INFO] [c.b.e.controller.UserController] - Initiating request for get all user
+04:16 01:23:27.718 [http-nio-9090-exec-1] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 01:23:27.880 [http-nio-9090-exec-1] [INFO] [c.b.e.service.impl.UserServiceImpl] - Initiating dao call to get all user
+04:16 01:23:27.880 [http-nio-9090-exec-1] [INFO] [c.b.e.controller.UserController] - Complete request for get all user
+04:16 01:23:49.014 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 9760 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 01:23:49.015 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+04:16 01:23:49.062 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04:16 01:23:49.062 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04:16 01:23:50.417 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+04:16 01:23:50.504 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1441 ms
+04:16 01:23:52.285 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 01:23:52.626 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+04:16 01:23:52.663 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+04:16 01:23:52.675 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 3.939 seconds (JVM running for 4.499)
+04:16 01:24:30.910 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all live product
+04:16 01:24:30.911 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 01:24:31.078 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 01:24:31.079 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Complete request for get all live product
+04:16 01:25:50.036 [http-nio-9090-exec-8] [INFO] [c.b.e.controller.ProductController] - Initiating request for search by keyword{"D"}
+04:16 01:25:50.036 [http-nio-9090-exec-8] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to search by keyword
+04:16 01:25:50.055 [http-nio-9090-exec-8] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to search by keyword{"D"}
+04:16 01:25:50.055 [http-nio-9090-exec-8] [INFO] [c.b.e.controller.ProductController] - Complete request for search by keyword{"D"}
+04:16 01:26:05.587 [http-nio-9090-exec-7] [INFO] [c.b.e.controller.ProductController] - Initiating request for search by keywordD
+04:16 01:26:05.587 [http-nio-9090-exec-7] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to search by keyword
+04:16 01:26:05.593 [http-nio-9090-exec-7] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to search by keywordD
+04:16 01:26:05.594 [http-nio-9090-exec-7] [INFO] [c.b.e.controller.ProductController] - Complete request for search by keywordD
+04:16 01:26:46.111 [http-nio-9090-exec-9] [INFO] [c.b.e.controller.ProductController] - Initiating request for search by keywordD
+04:16 01:26:46.111 [http-nio-9090-exec-9] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to search by keyword
+04:16 01:26:46.127 [http-nio-9090-exec-9] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to search by keywordD
+04:16 01:26:46.152 [http-nio-9090-exec-9] [INFO] [c.b.e.controller.ProductController] - Complete request for search by keywordD
+04:16 01:27:13.422 [http-nio-9090-exec-10] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all product
+04:16 01:27:13.423 [http-nio-9090-exec-10] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 01:27:13.442 [http-nio-9090-exec-10] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 01:27:13.451 [http-nio-9090-exec-10] [INFO] [c.b.e.controller.ProductController] - Complete request for get all product
+04:16 08:16:43.648 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Starting ElectronicStoreApplication using Java 17.0.5 on HP-PC with PID 7376 (D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore\target\classes started by cslok in D:\Bikkad IT-05 java\InteliJIdea Work Speace\ElectronicStore)
+04:16 08:16:43.648 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - The following 1 profile is active: "dev"
+04:16 08:16:43.702 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04:16 08:16:43.702 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04:16 08:16:45.353 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 9090 (http)
+04:16 08:16:45.472 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1769 ms
+04:16 08:16:47.924 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:16 08:16:48.295 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+04:16 08:16:48.334 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port(s): 9090 (http) with context path ''
+04:16 08:16:48.342 [restartedMain] [INFO] [c.b.e.ElectronicStoreApplication] - Started ElectronicStoreApplication in 5.102 seconds (JVM running for 5.926)
+04:16 08:25:30.471 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all product
+04:16 08:25:30.473 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 08:25:30.808 [http-nio-9090-exec-2] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 08:25:30.875 [http-nio-9090-exec-2] [INFO] [c.b.e.controller.ProductController] - Complete request for get all product
+04:16 08:28:56.064 [http-nio-9090-exec-5] [INFO] [c.b.e.controller.ProductController] - Initiating request for search by keywordD
+04:16 08:28:56.064 [http-nio-9090-exec-5] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to search by keyword
+04:16 08:28:56.117 [http-nio-9090-exec-5] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to search by keywordD
+04:16 08:28:56.120 [http-nio-9090-exec-5] [INFO] [c.b.e.controller.ProductController] - Complete request for search by keywordD
+04:16 08:30:05.987 [http-nio-9090-exec-8] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all live product
+04:16 08:30:05.989 [http-nio-9090-exec-8] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 08:30:06.002 [http-nio-9090-exec-8] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 08:30:06.003 [http-nio-9090-exec-8] [INFO] [c.b.e.controller.ProductController] - Complete request for get all live product
+04:16 08:31:16.603 [http-nio-9090-exec-1] [INFO] [c.b.e.controller.ProductController] - Initiating request for get all product
+04:16 08:31:16.605 [http-nio-9090-exec-1] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Initiating dao call to get all product
+04:16 08:31:16.609 [http-nio-9090-exec-1] [INFO] [c.b.e.s.impl.ProductServiceImpl] - Complete dao call to get all product
+04:16 08:31:16.626 [http-nio-9090-exec-1] [INFO] [c.b.e.controller.ProductController] - Complete request for get all product
+04:16 08:35:27.813 [http-nio-9090-exec-4] [INFO] [c.b.e.controller.CategoryController] - Initiating request for update category for {categoryId}1
+04:16 08:35:27.821 [http-nio-9090-exec-4] [INFO] [c.b.e.s.impl.CategoryServiceImpl] - Initiating dao call to update category by categoryId1
+04:16 08:35:27.895 [http-nio-9090-exec-4] [INFO] [c.b.e.s.impl.CategoryServiceImpl] - Complete dao call to update category by categoryId1
+04:16 08:35:27.895 [http-nio-9090-exec-4] [INFO] [c.b.e.controller.CategoryController] - Complete request for update category for {categoryId}1
+>>>>>>> origin/master

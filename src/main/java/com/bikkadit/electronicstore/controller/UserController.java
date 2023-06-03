@@ -79,7 +79,7 @@ public class UserController {
              @RequestParam(value = "sortDir", defaultValue = AppConstant.SORT_DIR, required = false) String sortDir) {
 
         logger.info("Initiating request for get all user");
-        PageableResponse<UserDto> getAllUser = this.userService.getAllUser(pageSize, pageNumber, sortBy, sortDir);
+        PageableResponse<UserDto> getAllUser = this.userService.getAllUser(pageNumber, pageSize, sortBy, sortDir);
         logger.info("Complete request for get all user");
         return new ResponseEntity<>(getAllUser, HttpStatus.OK);
     }
