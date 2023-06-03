@@ -96,7 +96,7 @@ public class UserServiceImpl implements UserService {
 //        }
 //
 // //     The above if_else statement can write as bellow by using
-        Sort sort=(sortDir.equalsIgnoreCase("desc"))?Sort.by(sortBy).ascending():Sort.by(sortBy).descending();
+        Sort sort=(sortDir.equalsIgnoreCase("desc"))?Sort.by(sortBy).descending():Sort.by(sortBy).ascending();
 
         Pageable p = PageRequest.of(pageNumber,pageSize, sort);
         Page<User> userPage = this.userRepo.findAll(p);
